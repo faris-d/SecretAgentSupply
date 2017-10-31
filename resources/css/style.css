@@ -9,15 +9,11 @@ body {
 }
 
 
-
-
 .container {
   color: white;
   max-width: 960px;
   margin: 0px auto;
 }
-
-
 
 /** Header **/
 
@@ -86,6 +82,10 @@ nav .container {
   padding-bottom: .75rem;
 }
 
+#menu {
+  display: none;
+}
+
 /** Company Product and Info Section **/
 
 .products{
@@ -94,13 +94,14 @@ nav .container {
   padding: 3rem 0rem;
   background-color: white;
 }
-.product {
+.product, .product-watch, .product-glasses {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: solid black 4px;
 }
+
 
 .product-image img {
   height: 9rem;
@@ -162,4 +163,70 @@ footer {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+}
+
+/** Media Queries **/
+
+@media only screen and (max-width: 1024px) {
+  .product-glasses {
+    display: none;
+  }
+  .product, .product-watch {
+    width: 47%;
+  }
+  nav li {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  nav .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product-watch {
+    display: none;
+  }
+  .product {
+    width: 90%;
+    justify-content: center;
+    margin: 0px auto;
+  }
+  .hours-container, .location-container {
+    width: 90%;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    margin: 0px auto;
+  }
+  .business-info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    justify-content: center;
+    margin: 0px auto;
+  }
+  .banner {
+    height: 15rem;
+  }
+  .banner .container {
+    font-family: Helvetica;
+    padding: 0rem 0rem 1.5rem 2rem;
+    font-weight: bold;
+    position: relative;
+    top: 10rem;
+    height:3rem;
+    width: 100%;
+  }
+  .banner .container h4 {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 0.77rem;
+  }
+  .banner .container h1 {
+    font-size: 1rem;
+    padding-bottom: 0rem;
+  }
 }

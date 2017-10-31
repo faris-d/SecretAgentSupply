@@ -1,4 +1,154 @@
 html {
   font-size: 18px;
-  
+  font-family: helvetica;
+
+
+}
+
+body {
+
+}
+
+.container {
+  color: white;
+  max-width: auto;
+
+}
+
+
+
+/** Header **/
+
+.header {
+  background-color: black;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+
+}
+
+.logo {
+  height: 1.5rem;
+  margin: 0rem 1rem 0rem 0.5rem;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+/** Banner Section **/
+
+.banner {
+  height: 25rem;
+  background-size: 100%;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+}
+
+.banner .container {
+
+  position: relative;
+  background-color: black;
+  top: 9rem;
+  padding-left: 3rem;
+  width: 20rem;
+}
+
+.banner h4 {
+  padding-top: 2rem;
+  padding-bottom: .25rem;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+
+
+/** Nav Section **/
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: firebrick;
+}
+
+/** Company Product and Info Section **/
+
+.products{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0rem;
+  background-color: white;
+}
+.product {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid black 4px;
+}
+
+.product-image img {
+  height: 9rem;
+  padding: 2rem 0rem;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#glasses {
+  width: 50%;
+  height: auto;
+}
+
+
+
+.product-description {
+  background-color: black;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.hours-container,  .location-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.hours, .location {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+
+}
+
+.info {
+  color: black;
+
+}
+
+/** Footer **/
+
+footer {
+  color: white;
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
 }

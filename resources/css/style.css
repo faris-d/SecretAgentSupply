@@ -2,17 +2,19 @@ html {
   font-size: 18px;
   font-family: helvetica;
 
-
 }
 
 body {
-
+  width: auto;
 }
+
+
+
 
 .container {
   color: white;
-  max-width: auto;
-
+  max-width: 960px;
+  margin: 0px auto;
 }
 
 
@@ -45,7 +47,6 @@ body {
 }
 
 .banner .container {
-
   position: relative;
   background-color: black;
   top: 9rem;
@@ -71,12 +72,18 @@ body {
 
 /** Nav Section **/
 
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+}
+
 nav .container {
   display: flex;
   justify-content: space-between;
+  width: 960px;
   padding-top: .75rem;
   padding-bottom: .75rem;
-  background-color: firebrick;
 }
 
 /** Company Product and Info Section **/
@@ -109,13 +116,16 @@ nav .container {
   height: auto;
 }
 
-
-
 .product-description {
   background-color: black;
   text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+#glasses-description {
+  position: relative;
+  top: 2.7rem;
 }
 
 .business-info {
@@ -151,4 +161,5 @@ footer {
   background-color: black;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start;
 }
